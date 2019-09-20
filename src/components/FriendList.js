@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types'; // to avoid the console warning
 import styles from './FriendList.css';
 import FriendListItem from './FriendListItem';
 

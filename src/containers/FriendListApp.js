@@ -7,7 +7,7 @@ import { changeActivePage } from '../actions/FriendListActions';
 import { FRIEND_LIST_ITEMS_COUNT_PER_PAGE as itemsCountPerPage } from '../constants/ActionTypes';
 import { FriendList, AddFriendInput, FriendListPaginate } from '../components';
 
-class FriendListApp extends Component {
+export class FriendListApp extends Component {
 
   render() {
     const { friendlist: { friendsById } } = this.props;

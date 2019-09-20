@@ -1,4 +1,4 @@
-exports[`test navigate to 2nd page and check if legend updated 1`] = `
+exports[`friend list paginate - snapshot test navigate to 2nd page and check if legend updated 1`] = `
 <div
   className={undefined}>
   <div>
@@ -41,7 +41,7 @@ exports[`test navigate to 2nd page and check if legend updated 1`] = `
 </div>
 `;
 
-exports[`test with default props component is rendered 1`] = `
+exports[`friend list paginate - snapshot test with default props component is rendered 1`] = `
 <div
   className={undefined}>
   <div>

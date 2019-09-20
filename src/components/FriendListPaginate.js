@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types'; // to avoid the console warning
+import PropTypes from 'prop-types';
 import styles from './FriendListPaginate.css';
 
 class FriendListPaginate extends Component {
