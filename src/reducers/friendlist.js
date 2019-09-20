@@ -4,15 +4,18 @@ const initialState = {
   friendsById: [
     {
       name: 'Theodore Roosevelt',
-      starred: true
+      starred: true,
+      isMale: true
     },
     {
       name: 'Abraham Lincoln',
-      starred: false
+      starred: false,
+      isMale: true
     },
     {
       name: 'George Washington',
-      starred: false
+      starred: false,
+      isMale: true
     }
   ]
 };
@@ -35,13 +38,25 @@ export default function friends(state = initialState, action) {
         friendsById: state.friendsById.filter((item, index) => index !== action.id)
       };
     case types.STAR_FRIEND:
-      let friends = [...state.friendsById];
-      let friend = friends.find((item, index) => index === action.id);
-      friend.starred = !friend.starred;
-      return {
-        ...state,
-        friendsById: friends
-      };
+      {
+        let friends = [...state.friendsById];
+        let friend = friends.find((item, index) => index === action.id);
+        friend.starred = !friend.starred;
+        return {
+          ...state,
+          friendsById: friends
+        };
+      }
+    case types.TOGGLE_FRIEND_SEX:
+      {
+        let friends = [...state.friendsById];
+        let friend = friends.find((item, index) => index === action.id);
+        friend.isMale = !friend.isMale;
+        return {
+          ...state,
+          friendsById: friends
+        };
+      }
 
     default:
       return state;

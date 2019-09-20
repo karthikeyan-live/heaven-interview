@@ -20,3 +20,10 @@ export function starFriend(id) {
     id
   };
 }
+
+export function toggleFriendSex(id) {
+  return {
+    type: types.TOGGLE_FRIEND_SEX,
+    id
+  };
+}
