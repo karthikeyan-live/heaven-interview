@@ -1,0 +1,11 @@
+:local(.pageButtonList) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+:local(.btnAction), :local(.btnAction):active, :local(.btnAction):focus, :local(.btnAction):hover {
+    margin: 2px;
+    width: 40px;
+    color: #5C75B0;
+}

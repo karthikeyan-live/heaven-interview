@@ -2,3 +2,6 @@ export const ADD_FRIEND = 'ADD_FRIEND';
 export const STAR_FRIEND = 'STAR_FRIEND';
 export const DELETE_FRIEND = 'DELETE_FRIEND';
 export const TOGGLE_FRIEND_SEX = 'TOGGLE_FRIEND_SEX';
+
+export const CHANGE_ACTIVE_PAGE = 'CHANGE_ACTIVE_PAGE';
+export const FRIEND_LIST_ITEMS_COUNT_PER_PAGE = 2;

@@ -17,7 +17,8 @@ const initialState = {
       starred: false,
       isMale: true
     }
-  ]
+  ],
+  activePageOfFriendList: 1
 };
 
 export default function friends(state = initialState, action) {
@@ -57,7 +58,11 @@ export default function friends(state = initialState, action) {
           friendsById: friends
         };
       }
-
+    case types.CHANGE_ACTIVE_PAGE:
+      return {
+        ...state,
+        activePageOfFriendList: action.pageNumber
+      };
     default:
       return state;
   }
